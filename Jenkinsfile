@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Run') {
             steps { 
-                sh 'sudo docker-compose up -d' 
+                sh 'echo 'arun' | sudo -S docker-compose up -d' 
             }
         }
     }
